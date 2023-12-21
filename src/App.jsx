@@ -52,9 +52,6 @@ function App() {
   return (
     <>
       <div className='flex flex-col md:flex-row'>
-        <button onClick={display}>
-          a
-        </button>
         {isLoaded && <LoadingPanel/>}
         {iscurrentFetched && <MainPanel data={currentWeatherData} searchWeather={handleLocation}/>}
         {isForecastFetched && <SidePanel data={forecastWeatherData}/>}

@@ -6,7 +6,7 @@ const TodayForecast = ({forecastData}) => {
     let arrayIndexes = [1, 2, 3] 
   return (
     <>
-    <div className='h-1/2 md:h-3/4 flex flex-row justify-evenly bg-gradient-to-br from-white to-blue-200 rounded-xl shadow-xl p-5 m-5'>
+    <div className='h-1/2 md:h-2/3 flex flex-row justify-evenly bg-gradient-to-br from-white to-blue-200 rounded-xl shadow-xl p-5 m-5'>
         {arrayIndexes.map((index) => (
             <div className='bg-gradient-to-br from-cyan-500 to-blue-500 w-1/4 shadow-xl p-5 rounded-xl'>
             <div className='flex flex-col items-center'>
