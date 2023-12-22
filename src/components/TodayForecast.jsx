@@ -11,7 +11,7 @@ const TodayForecast = ({forecastData}) => {
             <div className='bg-gradient-to-br from-cyan-500 to-blue-500 w-1/4 shadow-xl p-5 rounded-xl'>
             <div className='flex flex-col items-center'>
                 <img src={"http://openweathermap.org/img/wn/"+ forecastData.list[index].weather[0].icon +  "@4x.png"} alt="Weather icon"/>
-                <div className='flex text-5xl text-white'>
+                <div className='flex text-3xl lg:text-5xl text-white'>
                     <p>
                         <CountUp start={-5} end={Math.round(forecastData.list[index].main.temp)} />
                     </p>

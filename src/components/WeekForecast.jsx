@@ -13,10 +13,10 @@ const WeekForecast = ({forecastData}) => {
     <>
     <div className='flex flex-row justify-evenly bg-gradient-to-br from-white to-blue-200 rounded-xl shadow-xl p-5 m-5'>
         {arrayIndexes.map((index) => (
-            <div className='bg-gradient-to-br from-cyan-500 to-blue-500 w-1/6 shadow-xl p-5 rounded-xl'>
+            <div className='bg-gradient-to-br from-cyan-500 to-blue-500 w-1/6 md:w-1/6 shadow-xl p-5 rounded-xl'>
             <div className='flex flex-col items-center'>
                 <img src={"http://openweathermap.org/img/wn/"+ forecastData.list[index].weather[0].icon +  "@4x.png"} alt="Weather icon"/>
-                <div className='flex text-4xl text-white'>
+                <div className='flex text-2xl lg:text-5xl text-white'>
                     <p>
                         <CountUp start={-5} end={Math.round(forecastData.list[index].main.temp)} />
                     </p>

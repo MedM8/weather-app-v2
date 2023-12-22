@@ -26,7 +26,7 @@ const SidePanel = ({data}) => {
             <button id='buttonToday' className='duration-150' onClick={handleClickToday}>Today</button>
             <button id='buttonWeek' className='text-[#abaaaa] duration-150' onClick={handleClickWeek}>5 Days</button>
         </div>
-        <div className='h-[80vh] flex flex-col justify-center'>
+        <div className='h-50vh md:h-[80vh] flex flex-col justify-center'>
           {/* {data.city.name} */}
           {isToday && <TodayForecast forecastData={data}/>}
           {isToday || <WeekForecast forecastData={data}/>}
